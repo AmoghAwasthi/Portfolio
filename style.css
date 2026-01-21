@@ -1,0 +1,146 @@
+/* Color Palette & Font Settings */
+:root {
+    --bg-dark: #101828;
+    --accent-gold: #c59d5f;
+    --text-main: #ffffff;
+    --text-muted: #94a3b8;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Nav Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-gold);
+}
+
+/* Hero Section Layout */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    min-height: 80vh;
+}
+
+/* Image Frame Effect */
+.image-container {
+    position: relative;
+    flex: 1;
+}
+
+.profile-pic {
+    width: 380px;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 2;
+    background-color: var(--accent-gold); /* Fallback similar to image background */
+}
+
+.white-frame {
+    position: absolute;
+    width: 380px;
+    height: 480px;
+    border: 8px solid rgba(255, 255, 255, 0.8);
+    top: -20px;
+    left: 20px;
+    z-index: 1;
+}
+
+/* Text Content Styling */
+.hero-text {
+    flex: 1;
+    padding-left: 60px;
+}
+
+.subtitle {
+    color: var(--accent-gold);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 85px;
+    line-height: 1.1;
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+p {
+    color: var(--text-muted);
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.cta-button {
+    border: 1px solid #334155;
+    padding: 12px 35px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    background: transparent;
+}
+
+.cta-button:hover {
+    background: white;
+    color: var(--bg-dark);
+}
+
+/* ===== CONTACT PAGE LINK COLOR FIX ===== */
+.contact-card a {
+    color: #ffff00 !important;   /* yellow */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: #facc15;              /* soft yellow on hover */
+    text-decoration: underline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+img {
+    width: 440px;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* soften image appearance */
+img {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
